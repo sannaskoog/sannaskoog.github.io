@@ -98,6 +98,10 @@
 		letter-spacing: -0.05em;
 	}
 
+    h2.imageText {
+        text-shadow: 0 0 10px #000;
+    }
+
 	strong, b {
 		color: #fff;
 		color: rgba(255, 255, 255, 0.85);
@@ -381,6 +385,7 @@
 					text-align: center;
 					font-size: 1.25em;
 					color: #fff;
+                    text-shadow: 0 0 10px #000;
 				}
 
 				.poptrox-popup .nav-next, .poptrox-popup .nav-previous, .poptrox-popup .closer {
