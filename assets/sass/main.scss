@@ -21,7 +21,7 @@
 	));
 
 	@include skel-layout((
-		reset: 'full',
+        reset: 'full',
 		boxModel: 'border',
 		grid: ( gutters: (40px, 40px) ),
 		conditionals: true,
@@ -721,8 +721,8 @@
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		background: #CCA349 url('images/banner.svg') bottom center no-repeat;
-		padding: 5em 0 5em 0;
-		margin: 0;
+		padding: 5em;
+		margin: auto;
 		background-size: 125% auto;
 
 		.button {
@@ -741,7 +741,8 @@
 		}
 
 		p {
-			margin: 0;
+			margin: auto;
+            max-width: 850px;
 		}
 
 		footer {
@@ -944,7 +945,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 4em 0 4em 0;
+				padding: 4em;
 				background-size: auto, 175% auto;
 			}
 
