@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.everything {
+    animation-name: fadeIn;
+    animation-delay: 0.3s;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#content {
+    transition: margin-left 0.5s;
+}
+
+p {
+    font-family: Baskerville, serif;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+h1 {
+    margin-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: black;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-right: 5%;
+    margin-top: 90px;
+    margin-bottom: 0;
+    text-align: right;
+    font-size: 3em;
+    color: black;
+}
+
+/* NAVBAR */
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.topnav .openbtn {
+    float: right;
+    display: none;
+    text-align: center;
+    margin-right: 10px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: underline;
+    font-size: 1em;
+    color: black;
+    font-family: oswald, sans-serif;
+    font-weight: 700;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.sidnavText {
+    margin-top: 10%;
+}
+
+a:hover {
+    color: #FFB600;
+}
+a:active {
+    color: #E8AA10;
+}
+
+.openbtn:hover {
+    color: #FFB600;
+}
+.openbtn:active {
+    color: #E8AA10;
+} 
+
+a {
+    cursor: pointer;
+}
+
+.main {
+    font-size: 2em;
+    padding-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    font-size: 1em;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    float: right;
+    padding-right: 5%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+/* ABOUT PAGE */
+
+.aboutText {
+    max-width: 500px;
+    column-count: 2;
+    column-width: 200px;
+    column-gap: 2em;
+    position: relative;
+    margin-top: 2%;
+}
+.textBox {
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    max-width: 500px;
+}
+.textBox h1 {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif; 
+    max-width: 500px;
+    position: relative;
+}
+.bigImg {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: auto;
+    margin-left: 35%;
+}
+.meIcon {
+    color: black;
+    float: right;
+    padding: 7%;
+
+}
+.meIcon:hover {
+    color: #FFB600;
+}
+.meIcon:active {
+    color: #E8AA10;
+}
+.icons {
+    font-size: 1.3em;
+    float: right;
+    width: 25%;
+}
+
+/* IMAGES */
+
+.gallery {
+    width: 42.5%;
+    height: auto;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#bigPaint {
+    width: 90%;
+    height: auto;
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+/* MEDIA SCREENS */
+
+@media screen and (max-height: 300px) and (max-width: 600px) {
+    .menu {display: none;}
+    .topnav .openbtn {
+        float: right;
+        display: block;
+        text-decoration: none;
+    }
+    .sidenav {
+        display: block;
+    }
+    .bigImg {
+        width: 100%;
+        height: auto;
+
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .textBox {
+        margin-left: 0;
+        margin-right: 10%;    
+    }
+    .gallery {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-height: 300px) and (min-width: 601px) {
+    .bigImg {
+        width: auto;
+        height: 100%;
+        position: fixed;
+        top: 60px;
+        right: 0;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .textBox {
+        margin-left: 0;
+        margin-right: 10%;    
+    }
+}
+@media screen and (max-width: 600px) and (orientation: portrait)  {
+    .menu {display: none;}
+    .topnav .openbtn {
+        float: right;
+        display: block;
+        text-decoration: none;
+    }
+    .sidenav {
+        display: block;
+    }
+    .bigImg {
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    .textBox {
+        margin-left: 0;
+        margin-right: 10%;
+        position: absolute;
+        top: 20%;
+    }
+    .icons {
+        font-size: 1em;
+        float: right;
+        width: 30%;
+    }
+    .gallery {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main {
+        padding: 14px 5%;
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape)  {
+    .menu {display: none;}
+    .topnav .openbtn {
+        float: right;
+        display: block;
+        text-decoration: none;
+    }
+    .sidenav {
+        display: block;
+    }
+    .gallery {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main {
+        padding: 14px 5%;
+        font-size: 1.3em;
+    }
+}
+@keyframes fadeIn { 
+    from {opacity:0;} 
+    to { opacity:1;}
+}
