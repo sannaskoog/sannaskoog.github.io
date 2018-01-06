@@ -189,7 +189,10 @@ footer {
 .sidnavText {
     margin-top: 10%;
 }
-
+a {
+    color: black;
+    text-decoration: none;
+}
 a:hover {
     color: #FFB600;
 }
@@ -267,6 +270,30 @@ a {
     height: 100%;
     width: auto;
     margin-left: 35%;
+}
+.bigImgDiv p {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    font-family:  'Oswald', sans-serif;
+    font-size: 0.9em;
+}
+.bigImgDiv a {
+    color: white;
+}
+.bigImgDiv a:hover {
+    color: #FFB600;
+}
+.bigImgDiv p:hover {
+    color: #FFB600;
+}
+.bigImgDiv a:active {
+    color: #E8AA10;
+}
+.bigImgDiv p:active {
+    color: #E8AA10;
 }
 .meIcon {
     color: black;
