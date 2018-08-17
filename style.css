@@ -265,35 +265,17 @@ a {
     position: relative;
 }
 .bigImg {
+    object-fit: contain;
+    min-width: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
-    height: 100%;
-    width: auto;
-    margin-left: 35%;
-}
-.bigImgDiv p {
-    color: white;
-    position: fixed;
-    bottom: 0;
     right: 0;
-    margin: 15px;
-    font-family:  'Oswald', sans-serif;
-    font-size: 0.9em;
 }
-.bigImgDiv a {
-    color: white;
-}
-.bigImgDiv a:hover {
-    color: #FFB600;
-}
-.bigImgDiv p:hover {
-    color: #FFB600;
-}
-.bigImgDiv a:active {
-    color: #E8AA10;
-}
-.bigImgDiv p:active {
-    color: #E8AA10;
+.bigImgDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .meIcon {
     color: black;
@@ -338,6 +320,23 @@ a {
 
 /* MEDIA SCREENS */
 
+@media screen and (orientation: portrait) {
+    .bigImg {
+        max-height: 100%;
+    }
+}
+@media screen and (orientation: landscape) {
+    .bigImg {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .bigImg {
+        max-height: 100%;
+        max-width: 150%;
+    }
+}
+
 @media screen and (max-height: 300px) and (max-width: 600px) {
     .menu {display: none;}
     .topnav .openbtn {
@@ -348,17 +347,12 @@ a {
     .sidenav {
         display: block;
     }
-    .bigImg {
-        width: 100%;
-        height: auto;
-
-    }
     h1 {
         font-size: 1.8em;
     }
     .textBox {
-        margin-left: 0;
-        margin-right: 10%;    
+        margin-left: 10%;
+        margin-right: 0;    
     }
     .gallery {
         width: 90%;
@@ -370,19 +364,12 @@ a {
     } 
 }
 @media screen and (max-height: 300px) and (min-width: 601px) {
-    .bigImg {
-        width: auto;
-        height: 100%;
-        position: fixed;
-        top: 60px;
-        right: 0;
-    }
     h1 {
         font-size: 1.8em;
     }
     .textBox {
-        margin-left: 0;
-        margin-right: 10%;    
+        margin-left: 10%;
+        margin-right: 0;    
     }
 }
 @media screen and (max-width: 600px) and (orientation: portrait)  {
@@ -395,17 +382,12 @@ a {
     .sidenav {
         display: block;
     }
-    .bigImg {
-        margin: 0;
-        height: 100%;
-        width: auto;
-    }
     h1 {
         font-size: 1.3em;
     }
     .textBox {
-        margin-left: 0;
-        margin-right: 10%;
+        margin-left: 10%;
+        margin-right: 0;
         position: absolute;
         top: 20%;
     }
